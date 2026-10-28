@@ -1,0 +1,27 @@
+@model PapeleriaMVC.Models.Producto
+
+<div class="mb-3">
+    <label asp-for="Nombre" class="form-label">Nombre</label>
+    <input asp-for="Nombre" class="form-control" />
+    <span asp-validation-for="Nombre" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label asp-for="Precio" class="form-label">Precio</label>
+    <input asp-for="Precio" class="form-control" />
+    <span asp-validation-for="Precio" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label asp-for="Stock" class="form-label">Stock</label>
+    <input asp-for="Stock" class="form-control" />
+    <span asp-validation-for="Stock" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label asp-for="CategoriaId" class="form-label">Categoría</label>
+    <select asp-for="CategoriaId" class="form-select" asp-items="ViewBag.CategoriaId"></select>
+</div>
+<div class="mb-3">
+    <label asp-for="ProveedorId" class="form-label">Proveedor</label>
+    <select asp-for="ProveedorId" class="form-select" asp-items="ViewBag.ProveedorId">
+        <option value="">-- Sin proveedor --</option>
+    </select>
+</div>

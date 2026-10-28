@@ -1,0 +1,38 @@
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="text-center py-5">
+    <h1 class="display-4">Bienvenido a la Papelería</h1>
+    <p class="lead">Administra tus productos, categorías y proveedores.</p>
+</div>
+
+<div class="row g-3 justify-content-center">
+    <div class="col-md-4">
+        <div class="card h-100 text-center">
+            <div class="card-body">
+                <h5 class="card-title">Productos</h5>
+                <p class="card-text">Consulta el inventario, precios y existencias.</p>
+                <a class="btn btn-primary" asp-controller="Productos" asp-action="Index">Ver productos</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 text-center">
+            <div class="card-body">
+                <h5 class="card-title">Categorías</h5>
+                <p class="card-text">Organiza tus artículos por tipo.</p>
+                <a class="btn btn-primary" asp-controller="Categorias" asp-action="Index">Ver categorías</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 text-center">
+            <div class="card-body">
+                <h5 class="card-title">Proveedores</h5>
+                <p class="card-text">Lleva el control de quién te surte.</p>
+                <a class="btn btn-primary" asp-controller="Proveedores" asp-action="Index">Ver proveedores</a>
+            </div>
+        </div>
+    </div>
+</div>
